@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+     <title></title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="formulario.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Sênior Fit</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="..//index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="..//Sobre/sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Cadastro</a>
+            </li>
+        </ul>
+        
+      </div>
+    </nav>
+      
+    <div class="container ">
+       
+      <header>
+        <h1>
+          Sênior Fit
+        </h1>
+        
+        <p class="subtitle">
+         Formulario de Cadastro
+        </p>
+
+    </header>
+    
+
+      <div class="principal">
+          <form method="POST">
+            <div class="form-group">
+              <label for="txtname">Name: </label>
+              <input type="text" name="txtname" placeholder="Entre com seu nome" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="txtemail">Email:</label>
+              <input type="text" name="txtemail" placeholder="Entre com seu Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="txtage">Idade: </label>
+              <input type="text" name="txtname" placeholder="Entre com sua idade" class="form-control">
+            </div>
+            <div class="form-group">
+              <p>Qual opção você gostaria?</p>
+              <select name="role" class="form-control">
+                <option disabled selected value> Escolha uma opção</option>
+                <option value="caminhada">Caminhada</option>
+                <option value="dança">Dança</option>
+                <option value="um personal">Um personal</option>
+                <option value="aerobica">Aerobica</option>
+                <option value="outro">Todas as opções acima</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <p>Você recomendaria esta empresa para um amigo?</p>
+              <label>
+                  <input type="radio" value="não-recomendaria" name="user-recommend" class="input-radio">
+                  Não recomendaria
+              </label>
+              <label>
+                <input type="radio" value="recomendaria" name="user-recommend" class="input-radio">
+                Recomendaria
+            </label>
+            <label>
+              <input type="radio" value="não-recomendaria" name="user-recommend" class="input-radio">
+              Talvez
+            </label>
+          </div>
+          <div class="form-group">
+            <p>Alguma sugestão</p>
+             <textarea name="txtsugestao" cols="30" rows="7" placeholder="Digite aqui sua sugestao"></textarea>
+          </div>
+          <div form-group>
+              <button type="button" name="btenviar" value="ok">Enviar</button>
+            
+          </div>
+        </form>                  
+      </div>  
+         
+  </body>
+  
+</html>
